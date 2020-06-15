@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Recipe Page.</h1>
+    </header>
+    <main>
+        <form action="http://localhost:3000/recipes" method="POST">
+            <label for="name">Enter Recipe:</label>
+            <input type="text" name="name" placeholder="Enter Recipe Name">
+            <label for="ingredient">Enter Ingredients:</label>
+            <input type="text" name="ingredient" placeholder="Enter Ingredients">
+            <label for="instructions">Enter Instructions:</label>
+            <input type="text" name="instructions" placeholder="Enter Instructions">
+            <input type="submit" value="Enter">
+        </form>
+        <form action="http://localhost:3001" method="GET">
+            <label for="name">Enter Recipe Name:</label>
+            <input type="text" name="name" placeholder="Enter Name Here">
+            <input type="submit" value="Search Recipe">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
