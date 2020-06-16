@@ -20,7 +20,7 @@ fetch(recipesURL)
 function displayRecipe(recipes){
     recipes.map(recipe =>{
         let recipeHeading = document.createElement('h2')
-        recipeHeading.innerText = recipe.name
+        recipeHeading.innerHTML = `<a href="showRecipe.html?id=${recipe.id}">${recipe.name}</a>`
         mainElement.append(recipeHeading)
     })
 }
