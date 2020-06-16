@@ -11,7 +11,6 @@ header{
     background-repeat: no-repeat;
     height: 75vh;
     margin: -1em;
-    
 }
 
 header h1{
@@ -24,7 +23,8 @@ header h1{
     font-family: 'Montserrat', sans-serif;
     opacity: .8;
 }
-.curved{
+div#wave{
+    z-index:2;
     background-image: url(./wave.svg);
 }
 
@@ -37,6 +37,11 @@ body{
 }
 
 #create-form{
-    margin: -1em 3em 3em 3em;
+    margin: 8em 3em 3em 3em;
     padding: 3em;
+    background-color: white;
+    border-radius: 7px;
+}
+svg{
+    margin: -12em;
 }
