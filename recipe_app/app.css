@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
 
-
+/* url(./wave.svg) */
 
 header{
-    background-image: url(./mockaroon.jpg), url(./wave.svg);
+    background-image: 
+        url(./mockaroon.jpg),
+        linear-gradient(hsl(190,50%,50%),hsl(160,50%,50%));
     background-blend-mode: saturation;
     background-size: cover;
     background-repeat: no-repeat;
     height: 75vh;
-    margin-left: none;
+    margin: -1em;
     
 }
 
@@ -16,13 +18,18 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 3.5em;
     color: hsl(228, 79%, 97%);
     height: 30vh;
     font-family: 'Montserrat', sans-serif;
+    opacity: .8;
+}
+.curved{
+    background-image: url(./wave.svg);
 }
 
 img{
+    opacity: 0.4;
     margin: 1em;
 }
 body{
@@ -30,5 +37,6 @@ body{
 }
 
 #create-form{
-    margin: 5em;
+    margin: -1em 3em 3em 3em;
+    padding: 3em;
 }
