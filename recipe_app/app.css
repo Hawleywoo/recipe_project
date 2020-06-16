@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
+
+
+
+header{
+    background-image: url(./mockaroon.jpg), url(./wave.svg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin-left: none;
+    
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: hsl(228, 79%, 97%);
+    height: 30vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    margin: 1em;
+}
+body{
+    background-color: hsl(8, 93%, 88%);
+}
+
+#create-form{
+    margin: 5em;
+}
