@@ -9,15 +9,10 @@ class RecipesController < ApplicationController
         end
     end
 
-    # def show
-    #     if params["name"]
-    #         @recipes = Recipe.where("name LIKE ?","%#{params["name"]}%")
-    #         render json: @recipes
-    #     else
-    #         @recipes = Recipe.all
-    #         render json: @recipes
-    #     end
-    # end
+    def show
+        @recipe = Recipe.find(params[:id])
+        render json: @recipe
+    end
     
     def create
         Recipe.create(
