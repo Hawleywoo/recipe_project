@@ -37,3 +37,6 @@ body{
     margin: -1em 3em 3em 3em;
     padding: 3em;
 }
+svg{
+    margin-top: -2.5em;
+}
