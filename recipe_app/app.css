@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
 
-/* url(./wave.svg) */
-
 header{
     background-image: 
         url(./mockaroon.jpg),
@@ -10,7 +8,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     height: 75vh;
-    margin: -1em;
+    margin: 0em;
     
 }
 
@@ -28,9 +26,12 @@ header h1{
 img{
     opacity: 0.4;
     margin: 1em;
+    padding: 1.5em;
 }
-body{
+
+main{
     background-color: hsl(8, 93%, 88%);
+    filter: drop-shadow(0 -4mm 2.5mm hsl(0, 5%, 30%));
 }
 
 #create-form{
@@ -38,5 +39,9 @@ body{
     padding: 3em;
 }
 svg{
-    margin-top: -2.5em;
+    margin-top: -10.0em;
+    display: inline-block;
+    width: 100%;
+    
+    
 }
