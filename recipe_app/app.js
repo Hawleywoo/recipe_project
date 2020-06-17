@@ -8,7 +8,7 @@ if (searchName){
     recipesURL =`${recipesURL}?name=${searchName}`
 }
 
-const mainElement = document.querySelector('main')
+const mainElement = document.querySelector('#displayed')
 
 fetch(recipesURL)
     .then(response => {
@@ -20,6 +20,7 @@ fetch(recipesURL)
 function displayRecipe(recipes){
     recipes.map(recipe =>{
         let recipeHeading = document.createElement('h2')
+        recipeHeading.classList = "display-recipe"
         recipeHeading.innerHTML = `<a href="showRecipe.html?id=${recipe.id}">${recipe.name}</a>`
         mainElement.append(recipeHeading)
     })

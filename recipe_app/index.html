@@ -14,30 +14,33 @@
     </header>
     
     <main class="curved">
-        
-
+        <h2>Add New Recipe!</h2>
         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1440 320"><path fill="#FDCCC4" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,240C960,256,1056,256,1152,250.7C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
         <form action="http://localhost:3000/recipes" method="POST" id="create-form">
             <div>
                 <label for="name">Enter Recipe:</label>
-                <input type="text" name="name" placeholder="Recipe Name">
+                <textarea type="text" name="name" placeholder="Recipe Name" rows="6" columns="30"></textarea>
             </div>
+            
             <div>
                 <label for="ingredient">Enter Ingredients:</label>
-                <input type="text" name="ingredient" placeholder="Ingredients">
+                <input type="text" name="ingredient" placeholder="Ingredients" class="large-input">
             </div>
             <div>
                 <label for="instructions">Enter Instructions:</label>
-                <input type="text" name="instructions" placeholder="Instructions">
+                <input type="text" name="instructions" placeholder="Instructions" class="large-input">
                 <input type="submit" value="Enter New Recipe" id="create-recipe-button">
             </div>
         </form>
-
+        <h2>Search Recipes</h2>
         <form action="http://localhost:3001" method="GET">
-            <label for="name">Enter Recipe Name:</label>
-            <input type="text" name="name" placeholder="Enter Name Here">
+            <label for="name">Search Recipes:</label>
+            <input type="text" name="name" placeholder="Recipe Name">
             <input type="submit" value="Search Recipe">
         </form>
+        <div id="displayed">
+
+        </div>
 
       
     </main>
