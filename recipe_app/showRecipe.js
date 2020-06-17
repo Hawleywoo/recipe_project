@@ -6,6 +6,8 @@ fetch(`http://localhost:3000/recipes/${searchId}`)
     .then(recipe => handleRecipe(recipe))
 
     const main = document.querySelector("main")
+    const ingredients = document.getElementById("ingredients-div")
+    const instructions = document.getElementById("instructions-div")
     const deleteForm = document.querySelector('#delete-form')
 
     function handleRecipe(recipe){
@@ -21,5 +23,7 @@ fetch(`http://localhost:3000/recipes/${searchId}`)
         
         deleteForm.action = `http://localhost:3000/recipes/${searchId}`
 
-        main.prepend(recipeHeading, recipeIngredients, recipeInstructions)
+        main.prepend(recipeHeading)
+        ingredients.append(recipeIngredients)
+        instructions.append(recipeInstructions)
     }
