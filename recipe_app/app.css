@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
 
 header{
+    position: relative;
     background-image: 
         url(./mockaroon.jpg),
         linear-gradient(hsl(190,50%,50%),hsl(160,50%,50%));
@@ -21,9 +22,10 @@ header h1{
     height: 30vh;
     font-family: 'Montserrat', sans-serif;
     opacity: .8;
+    text-shadow: 6px 7px 7px hsl(0, 5%, 25%);
 }
 
-img{
+#cookie-logo{
     opacity: 0.4;
     margin: 1em;
     padding: 1.5em;
@@ -35,7 +37,7 @@ main{
 }
 
 #create-form{
-    margin: -1em 3em 3em 3em;
+    margin: 0em 3em 3em 3em;
     padding: 3em;
 }
 svg{
@@ -44,4 +46,10 @@ svg{
     width: 100%;
     
     
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    margin-top: -1em;
 }
