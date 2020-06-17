@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+    before_action :find_recipe, only: [:show, :update, :destroy]
+    
     def index
         if params["name"]
             @recipes = Recipe.where("name LIKE ?","%#{params["name"]}%")
@@ -10,7 +12,6 @@ class RecipesController < ApplicationController
     end
 
     def show
-        @recipe = Recipe.find(params[:id])
         render json: @recipe
     end
     
@@ -21,5 +22,24 @@ class RecipesController < ApplicationController
             instructions: params[:instructions]
         )
         redirect_to "http://localhost:3001/"
+    end
+
+    def update 
+        @recipe.update()
+    end
+
+    def destroy
+        @recipe.destroy
+        redirect_to "http://localhost:3001"
+    end
+
+    private
+
+    def find_recipe
+        @recipe = Recipe.find(params[:id ])
+    end
+
+    def allowed_params
+        params.permit(:name,)
     end
 end
