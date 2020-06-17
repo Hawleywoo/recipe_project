@@ -41,12 +41,21 @@ header h1{
 main{
     height: 100%;
     background-color: hsl(8, 93%, 88%);
+    overflow: auto;
 }
 
-#create-form{
-    margin: 0em 3em 3em 3em;
-    padding: 3em;
+#recipe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5em 5em 0 5em;
 }
+
+/* #create-form{
+    margin: 0em 3em 3em 3em;
+    padding: 5em;
+} */
+
 svg{
     margin-top: -10.0em;
     display: inline-block;
@@ -73,4 +82,24 @@ h2{
     border-width: 1em 0em;
     align-items: center;
     box-shadow: 0 10px 10px hsl(0, 5%, 25%);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5em;
+    /* margin: 5em; */
+}
+
+#delete-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 3em 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    padding: 1em;
 }
