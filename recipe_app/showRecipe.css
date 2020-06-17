@@ -51,17 +51,10 @@ main{
     padding: 5em 5em 0 5em;
 }
 
-/* #create-form{
-    margin: 0em 3em 3em 3em;
-    padding: 5em;
-} */
-
 svg{
     margin-top: -10.0em;
     display: inline-block;
     width: 100%;
-    
-    
 }
 
 #wave{
@@ -90,7 +83,6 @@ p {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 1.5em;
-    /* margin: 5em; */
 }
 
 #delete-form {
