@@ -4,15 +4,14 @@ class RecipesController < ApplicationController
     def index
         if params["name"]
             @recipes = Recipe.where("name LIKE ?","%#{params["name"]}%")
-            render json: @recipes
         else
             @recipes = Recipe.all
-            render json: @recipes
         end
+        render json: @recipes, include: [:users]
     end
 
     def show
-        render json: @recipe
+        render json: @recipe, include: [:users]
     end
     
     def create

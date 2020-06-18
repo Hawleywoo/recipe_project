@@ -36,15 +36,16 @@
             </div>
         </form>
         <h2>Search Recipes</h2>
-        <div>
-            <h3>Enter UserName</h3>
-            <form action="http:localhost:3001" method="GET">
-                <select name="name" id="userName-dropdown">
-                    
+        <div id="user-form-parent">
+            <form action="http:localhost:3001" method="GET" id="user-name-form">
+                <label for="id">Select User Name:</label>
+                <select name="id" id="userName-dropdown">
+
                 </select>
                 <input type="submit" value="Enter User Name">
             </form>
         </div>
+        <h3>Or...</h3>
         <div class="search">
             <form action="http://localhost:3001" method="GET">
                 <label for="name">Search Recipes:</label>

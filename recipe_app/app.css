@@ -175,3 +175,28 @@ a{
     border-radius: 4px;
     border-color: hsl(0, 31%, 75%);
 }
+
+#user-form-parent{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+
+}
+
+#user-form{
+    padding: 35px;
+
+}
+
+select{
+    padding: 5px 16px 6px 6px;
+    margin: 0 19px 0px 0;
+    border-radius: 4px;
+    border-style: inset;
+    border-color: hsl(0, 31%, 75%);
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
