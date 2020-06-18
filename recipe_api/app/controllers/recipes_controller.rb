@@ -25,7 +25,12 @@ class RecipesController < ApplicationController
     end
 
     def update 
-        @recipe.update()
+        @recipe.update(
+            name: params[:name],
+            ingredient: params[:ingredient],
+            instructions: params[:instructions]
+        )
+        redirect_to "http://localhost:3001/showRecipe.html?id=#{params[:id]}"
     end
 
     def destroy
