@@ -16,7 +16,7 @@
 
 ## General Info
 
-The Recipe Locker is a full-stack application made with Ruby on Rails, HTML, CSS, and Javascript that allows users to search for recipes, view recipes, and delete recipes.
+The Recipe Locker is a full-stack application made with Ruby on Rails, HTML, CSS, and Javascript that allows users to search for recipes, view recipes, change recipes, and delete recipes.
 
 ## Intro Video
 
@@ -72,12 +72,12 @@ function displayRecipe(recipes){
 * Allows users to search for a recipe based on a keyword
 * Allows users to view recipes
 * Creates new recipes
+* Allows users to update recipes
 * Allows users to delete recipes
 
-## To-do List
+## To-Do List
 
 * Refactor “code smell”
-* Add functionality to update a recipe
 * Including a separate table for recipe ingredients
 * Including user-login functionality
 
