@@ -18,21 +18,31 @@
             <div id="ingredients-div"></div>
             <div id="instructions-div"></div>
         </div>
+        
+        <form action="" method="POST" id="update-form">
+            <div id="update-div">
+                <div class="form-inputs" id="recipe-name">
+                    <label for="name" class="enter-recipe">Enter Recipe:</label>
+                    <textarea type="text" name="name" placeholder="Recipe Name" rows="1" columns="45" class="large-input" class="enter-recipe"></textarea>
+                </div>
+                <div class="form-inputs">
+                    <label for="ingredient" >Enter Ingredients:</label>
+                    <textarea type="text" name="ingredient" placeholder="Ingredients" rows="6" columns="45" class="large-input"></textarea>
+                </div>
+                <div class="form-inputs">
+                    <label for="instructions">Enter Instructions:</label>
+                    <textarea type="text" name="instructions" placeholder="Instructions" rows="6" columns="45" class="large-input"></textarea>
+                </div>
+            </div>
+            <div id="update-recipe-button">
+                <input type="hidden" name="_method" value="PUT"/>
+                <input type="submit" value="Update Recipe" >
+            </div>
+        </form>
 
         <form action="" method="POST" id="delete-form">
             <input type="hidden" name="_method" value="delete"/>
             <input type="submit" value="Delete Recipe"/>
-        </form>
-
-        <form action="" method="POST" id="update-form">
-            <label for="name"></label>
-            <input type="text" name="name">
-            <label for="ingredient"></label>
-            <input type="text" name="ingredient">
-            <label for="instructions"></label>
-            <input type="text" name="instructions">
-            <input type="hidden" name="_method" value="PUT"/>
-            <input type="submit" value="Update Recipe"/>
         </form>
 
     </main>
