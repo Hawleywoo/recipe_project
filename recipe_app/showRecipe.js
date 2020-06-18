@@ -9,6 +9,8 @@ fetch(`http://localhost:3000/recipes/${searchId}`)
     const ingredients = document.getElementById("ingredients-div")
     const instructions = document.getElementById("instructions-div")
     const deleteForm = document.querySelector('#delete-form')
+    const updateForm = document.querySelector('#update-form')
+
 
     function handleRecipe(recipe){
         const recipeHeading = document.createElement("h2")
@@ -22,6 +24,7 @@ fetch(`http://localhost:3000/recipes/${searchId}`)
         
         
         deleteForm.action = `http://localhost:3000/recipes/${searchId}`
+        updateForm.action = `http://localhost:3000/recipes/${searchId}`
 
         main.prepend(recipeHeading)
         ingredients.append(recipeIngredients)
