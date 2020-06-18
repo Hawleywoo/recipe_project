@@ -20,7 +20,7 @@ The Recipe Locker is a full-stack application made with Ruby on Rails, HTML, CSS
 
 ## Intro Video
 
-[Mod 2 Flatiron Project by Andrew Hawley and Lynn Amsbury](https://drive.google.com/file/d/1NHL_9BSdLU27-B2Hj9X6PrbDCQEjR_-u/view?usp=sharing)
+[Mod 2 Flatiron Project by Andrew Hawley and Lynn Amsbury](https://youtu.be/LSjnwPbmkTc)
 
 ## Technologies
 
