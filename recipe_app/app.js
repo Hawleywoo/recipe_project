@@ -26,7 +26,7 @@ fetch(usersURL)
     }).then(users =>{
         displayUsers(users);
     })
-    
+
 function displayRecipe(recipes){
     if(searchID){
         recipes.map(recipe =>{
