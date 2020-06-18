@@ -46,7 +46,7 @@ function displayRecipe(recipes){
         })
     }
 }
-// const dropdown = document.querySelector("select")
+const dropdown = document.querySelector("select")
 
 
 
