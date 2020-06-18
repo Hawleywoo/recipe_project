@@ -32,13 +32,13 @@ function displayRecipe(recipes){
         mainElement.append(recipeHeading)
     })
 }
-const dropdown = document.querySelector("select")
+// const dropdown = document.querySelector("select")
 
-function displayUsers(users){
-    users.map( user =>{
-        let userOption = document.createElement('option')
-        userOption.value = user.id
-        userOption.innerText = ``
+// function displayUsers(users){
+//     users.map( user =>{
+//         let userOption = document.createElement('option')
+//         userOption.value = user.id
+//         userOption.innerText = ``
 
-    })
-}
+//     })
+// }
