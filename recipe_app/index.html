@@ -12,7 +12,7 @@
         <h1>The Recipe Locker</h1>
         <img src="./wave.svg" alt="Wave" id="wave">
     </header>
-    
+
     <main class="curved">
         <h2>Add New Recipe!</h2>
         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1440 320"><path fill="#FDCCC4" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,240C960,256,1056,256,1152,250.7C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
@@ -37,8 +37,10 @@
         </form>
         <h2>Search Recipes</h2>
 
- 
+
         <div id="user-form-parent">
+            <!-- This action value gets you something like http://localhost:3001/localhost:3001?id=2 -->
+            <!-- Can just change to action="/" -->
             <form action="http:localhost:3001" method="GET" id="user-name-form">
                 <label for="id">Select User Name:</label>
                 <select name="id" id="userName-dropdown">
@@ -59,7 +61,7 @@
 
         <div id="displayed">
 
-        
+
         </div>
     </main>
     <footer>
